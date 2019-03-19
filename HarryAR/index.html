@@ -9,10 +9,10 @@
         <a-asset-item id="obj" src="./Harry/harry.obj"></a-asset-item>
         <a-asset-item id="mtl" src="./Harry/harry.mtl"></a-asset-item>
     </a-assets>
-    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
         
-        <a-marker type='barcode' value='3'>
-            <a-obj-model src="#obj" mtl="#mtl"></a-obj-model>
+        <a-marker type='barcode' value='6'>
+            <a-obj-model src="#obj" mtl="#mtl" rotation="-90 0 90" scale="0.03 0.03 0.03"></a-obj-model>
         </a-marker>
         
         <a-entity camera></a-entity>
